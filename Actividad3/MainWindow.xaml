@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Mosaico" Height="600" Width="800"
+        MinHeight="480"
+        MinWidth="460"
+        Icon=".\recursos\mosaic.ico">
+    <DockPanel 
+        LastChildFill="True">
+        <TextBlock
+            DockPanel.Dock="Top"
+            Background="Indigo"
+            Height="100"/>
+        <TextBlock
+            DockPanel.Dock="Left"
+            Background="Indigo"
+            Width="100"/>
+        <TextBlock
+            DockPanel.Dock="Right"
+            Background="DarkBlue"
+            Width="100"/>
+        <TextBlock
+            DockPanel.Dock="Bottom"
+            Background="DarkBlue"
+            Height="100"/>
+        <DockPanel 
+            LastChildFill="True">
+            <TextBlock
+                DockPanel.Dock="Left"
+                Background="Red"
+                Width="100" />
+            <TextBlock
+                DockPanel.Dock="Top"
+                Background="Green"
+                Height="100" />
+            <TextBlock
+                DockPanel.Dock="Bottom"
+                Background="Red"
+                Height="100" />
+            <TextBlock
+                DockPanel.Dock="Right"
+                Background="Green"
+                Width="100" />
+            <TextBlock
+                Background="black" />
+        </DockPanel>
+    </DockPanel>
 </Window>
